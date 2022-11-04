@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* Variabes */  
+/* $orange: #ffa600;
+$grey:#f3f3f3;
+$base-color:$orange ; */
+
+
+/* Mixin's */  
+@mixin transition {
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+@mixin corners ($radius) {
+-moz-border-radius: $radius;
+-webkit-border-radius: $radius;
+border-radius: $radius; 
+-khtml-border-radius: $radius; 
+}
+
+body {
+background:pink;
+/* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;  */
+height:100%;
+}
+
+.wrapper {
+width: 800px;
+margin: 100px auto;
+color:skyblue;
+text-align:center;
+}
+
+h1, h2, h3 {
+  font-family:
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+}
+
+#seconds, #tens{
+  font-size:7em;
+}
+
+
+  button {
+    background-color: skyblue;
+    font-size:1.2em;
+    padding:8px 10px;
+    width:180px;
+    margin: 15px;
+    
+  }
+}
